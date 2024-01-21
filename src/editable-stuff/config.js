@@ -5,11 +5,11 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Weishun",
-  middleName: "",
-  lastName: "Zhong",
-  message: " A statistical physicist wondering about intelligence.. ",
+  gradientColors: "#000030, #002d18, #5af1bb, #21c0a0, #384386, #aa304b, #ff7f7f, #d96652, #35373e, #000030",
+  firstName: "Chair",
+  middleName: "Forces",
+  lastName: "LLC",
+  message: " As BrrrrrRRRRRrrrrrrRRRRRrrrrrrtT my last email. ",
     icons: [
     ],
 };
@@ -30,12 +30,10 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
-  imageLink: require("../editable-stuff/weishunzhong.JPG"),
+  heading: "Products that give you the warm and fuzzies.",
+  imageLink: require("../editable-stuff/chair-forces-zoom.gif"),
   imageSize: 375,
-  message:
-    "",
-  resume: require("../editable-stuff/resume.pdf"),
+  secondImage: require("../assets/img/humming-turtle.jpg"),
 };
 
 // PROJECTS SECTION
@@ -46,7 +44,7 @@ const about = {
 const repos = {
   show: true,
   heading: "News",
-  gitHubUsername: "weishunzhong", //i.e."johnDoe12Gh"
+  gitHubUsername: "chairforces", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
