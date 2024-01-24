@@ -64,7 +64,7 @@ const Home = React.forwardRef((props, ref) => {
         />
       )}
       {leadership.show && (
-        <div id="publication">
+        <div id="gallery">
         <Leadership
           heading={leadership.heading}
           message={leadership.message}

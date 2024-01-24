@@ -34,7 +34,6 @@ const about = {
   imageLink: require("../editable-stuff/chair-forces-zoom.gif"),
   imageSize: 375,
   secondImage: require("../assets/img/humming-turtle.jpg"),
-  imageSize: 400,
 };
 
 // PROJECTS SECTION
@@ -43,7 +42,7 @@ const about = {
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
 const repos = {
-  show: true,
+  show: false,
   heading: "News",
   gitHubUsername: "chairforces", //i.e."johnDoe12Gh"
   reposLength: 4,
@@ -52,8 +51,8 @@ const repos = {
 
 // Leadership SECTION
 const leadership = {
-  show: true,
-  heading: "Publications",
+  show: false,
+  heading: "Gallery",
   message:
     "",
   images: [
@@ -77,63 +76,66 @@ const leadership = {
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Features",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "Mathematica", value: 90 },
-    { name: "High Performance Computing", value: 80 },
-    { name: "Tensorflow", value: 80 },
-    { name: "Pytorch", value: 70 },
-    { name: "Qiskit", value: 70 },
-  ],
-  softSkills: [
+    { name: "Comfort", value: 100 },
+    { name: "Luxury", value: 80 },
+    { name: "Style", value: 90 },
+    { name: "Hell Yeah Brother", value: 100 },
+    { name: "Made in America", value: 99 },
+    { name: "Veteran Owned and Operated", value: 100 },
+    { name: "Real Men of Genius", value: 85 },
+    { name: "Customization", value: 70 },
+  ],  
+	  softSkills: [
   ],
 };
 
 // GET IN TOUCH SECTION
 const getInTouch = {
-  show: true,
-  heading: "Get In Touch",
-  message:
-    "If you want to chat about science, or do some rock-climbing together, please feel free to email me at",
-  email: "wszhong AT ias DOT edu",
+	  show: true,
+	  heading: "Get In Touch",
+	  message:
+	    "Please reach out to Bruce and Dan at their linkedins, or ",
+	  email: "force chairs at mail of G dot com",
 };
+
 
 const experiences = {
   show: true,
-  heading: "Employment & Education",
+  heading: "Gallery and More",
   data: [
     {
-      role: 'Member, School of Natural Sciences <br /> Institute for Advanced Study',
-      companylogo: require('../assets/img/IAS_small.png'),
-      date: 'Sep. 2023 – ',
+      role: 'This is fine.',
+      companylogo: require('../assets/img/fine-small.png'),
+      date: '',
     }, 
   {
-    role: 'Ph.D. Fellow, Center for Brain Sciences <br /> Harvard University',
-    companylogo: require('../assets/img/Harvard_small.png'),
-    date: 'Sep. 2019 – Jun. 2023',
+    role: 'Models come in a left and a right hand.  See the lower part for the outside half of the hand.',
+    companylogo: require('../assets/img/yoda-small.png'),
+    date: '',
   }, 
     {
-      role: 'Research Intern, IBM Quantum <br /> IBM',
-      companylogo: require('../assets/img/IBM_small.png'),
-      date: 'May 2022 – Aug 2022',
+      role: 'Nothing quite like metal keycaps.',
+      companylogo: require('../assets/img/main-event-small.png'),
+      date: '',
     },
   {
-    role: 'Ph.D. Department of Physics (<a href="https://arxiv.org/abs/2308.01538" target="_blank">thesis</a>) <br />  Massachusetts Institute of Technology',
-    companylogo: require('../assets/img/MIT_small.png'),
-    date: 'Sep. 2017 – Jun. 2023',
+    role: 'You\'ll feel you\'re floating through the air at work.',
+    companylogo: require('../assets/img/floating-small.png'),
+    date: '',
     // thesis: 'Thesis: Non-equilibrium physics: from spin glasses to machine and neural learning'
   },
  {
-    role: 'M.S. Physical Sciences Division - Physics <br /> University of Chicago',
-    companylogo: require('../assets/img/chicago_small.png'),
-    date: 'Sep. 2016 – Jun.2017',
+    role: 'Wrist rests, smooth like a calm bay sunrise.',
+    companylogo: require('../assets/img/water-small.png'),
+    date: '',
     // thesis: 'Thesis: Associative pattern recognition through macro-molecular self-assembly'
   },
   {
-    role: 'B.S. Physics and Mathematics <br /> University of Michigan',
-    companylogo: require('../assets/img/michigan_small.png'),
-    date: 'Sep. 2013 – May. 2016',
+    role: 'Destroy all enemies, foreign and domestic, thanks to our ergonomic office enhancements.',
+    companylogo: require('../assets/img/brrrt-small.png'),
+    date: '',
     // thesis: 'Thesis: A Holographic c-Theorem for Schrödinger Spacetimes'
   },
   ]
@@ -146,43 +148,35 @@ const portfolio = {
    list: [
     {
     category: "Mobile App",
-    title: "Quantum neural networks for quantum error correction",
+    title: "If you steal our design I will find you, and I will kill you.",
     url: "https://arxiv.org/abs/2401.06300",
-    notes: "Quantum neural networks (QNNs) are inspired by their classical counterparts, but beyond heuristic considerations, the usefulness of such a concept \
-            has yet to be rigorously demonstrated. We show that in the case of decoding quantum information from quantum error-correcting codes, \
-            QNNs can provide an almost quadratic improvement in readout error over traditional stabilizer-based quantum error correction, \
-            thus establishing a clear scenario where quantum AI methods such as QNNs are proven to provide an advantage over conventional non-AI methods.",
-    thumbnail:require("../editable-stuff/QNN.png"), 
+    notes: "Here we see the ergonomic designs in action.  You've got your 60% keyboard, wrist rests, and a flat surface for them.  You also have your trusty Mousepad 9,000 (you're over 9,000).",
+    thumbnail:require("../editable-stuff/birds.png"), 
    },
    {
     category: "Mobile App",
-    title: "Weight-distribution constrained feedforward neural networks",
+    title: "Spin fidget spinner spin fidget spinner spin fidget spinner spin.",
     url: "https://arxiv.org/abs/2206.08933",
-    present:require("../editable-stuff/Disco_2022_neurips.png"),
-    notes: "We constructed a statistical mechanical theory that quantified the effect of imposing arbitrary network weight-distribution constraints. \
-            Our theory predicted that the network capacity was proportional to the geodesic distance between the imposed and the original distribution on the Wasserstein statistical manifold, \
-            and further predicted optimal prior distributions for achieving the best generalization performance. Our theory and the accompanying algorithm provided a geometric approach to study learning under constraints. ",
-    thumbnail:require("../editable-stuff/disco.png"), 
+    present:require("../editable-stuff/link.png"),
+    notes: "Here we have our left-hand wrist rest.  You can pick it up and move it, and the magnet moves with your wrist.",
+    thumbnail:require("../editable-stuff/link.png"), 
    },
    
    {
     category: "Machine Learning",
-    title: "Generative modeling by disordered quantum systems",
+    title: "This is you on Chair Forces.",
     url:"https://arxiv.org/abs/2207.02346",
-    present:require("../editable-stuff/MBL_Born_poster.png"),
-    notes: "We proposed a class of quantum generative models that we have named “MBL hidden Born machines”. We proved that the trainability of basic Born machines could be tremendously improved by including hidden units, \
-            and that the MBL Born machine possessed more expressive power than classical models. Our work revealed relationships between learning and physical dynamics that could serve as guiding principles for designing quantum generative models. ",
-    thumbnail:require("../editable-stuff/MBL.png"), 
+    present:require("../editable-stuff/hand.png"),
+    notes: "Hell yeah brother.  Soaring through the open sky.  Your boss wants your setup, computers want to be your setup.",
+    thumbnail:require("../editable-stuff/hand.png"), 
     // repo: "https://github.com/xunxdd/ILML---Google-Deep-Dream",
    },
    {
     category: "Machine Learning", 
-    title: "Discriminative learning by out-of-equilibrium many-body systems",
+    title: "Back at it again with the white wrist rests!!!",
     url:"https://arxiv.org/abs/2001.03623",
-    notes: "We demonstrated that driven spin-glasses could perform a wide range of discriminative learning tasks that were usually only seen in digital systems, such as classification, memory, and novelty detection. \
-            We further demonstrated that traditional thermodynamic variables were no longer effective in characterizing these novel many-body learning phenomena, \
-            and that machine learning could make better predictions by using macroscopic variables constructed from nonlinear combination of traditional ones.",
-    thumbnail:require("../editable-stuff/spin_glass.png"), 
+    notes: "So much efficiency you can't even see the programs loading.",
+    thumbnail:require("../editable-stuff/uniform.png"), 
     repo: "https://github.com/smarzen/Statistical-Physics", 
     // videoUrl:""
    }
