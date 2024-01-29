@@ -71,7 +71,7 @@ const Home = React.forwardRef((props, ref) => {
           img={leadership.images}
           imageSize={leadership.imageSize}
         />
-        </div>        
+        </div>
       )}
       {portfolio.show && (
         <div id="portfolio">

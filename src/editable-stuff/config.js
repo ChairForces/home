@@ -98,28 +98,30 @@ const skills = {
 
 // GET IN TOUCH SECTION
 const getInTouch = {
-	  show: true,
-	  heading: "Get In Touch",
-	  message:
-	    "Please reach out to Bruce and Dan at their linkedins, or ",
-	  email: "force chairs at mail of G dot com",
+  show: true,
+  heading: "Contact",
+  message:
+    "Please reach out to Bruce and Dan at their linkedins, or ",
+  email: "force chairs at mail of the G dot com",
 };
 
 
 const experiences = {
   show: true,
-  heading: "Gallery and More",
+  heading: "Examples in action",
+  message:
+    "",
   data: [
-    {
-      role: 'This is fine.',
-      companylogo: require('../assets/img/fine-small.png'),
-      date: '',
-    }, 
+  {
+    role: 'This is fine.',
+    companylogo: require('../assets/img/fine-small.png'),
+    date: '',
+  },
   {
     role: 'Models come in a left and a right hand.  See the lower part for the outside half of the hand.',
     companylogo: require('../assets/img/yoda-small.png'),
     date: '',
-  }, 
+  },
     {
       role: 'Nothing quite like metal keycaps.',
       companylogo: require('../assets/img/main-event-small.png'),
@@ -148,7 +150,7 @@ const experiences = {
 
 const portfolio = {
   show: true,
-  heading: "Recent Projects",
+  heading: "A closer look",
   note: "",
    list: [
     {
@@ -166,7 +168,7 @@ const portfolio = {
     notes: "Here we have our left-hand wrist rest.  You can pick it up and move it, and the magnet moves with your wrist.",
     thumbnail:require("../editable-stuff/link.png"), 
    },
-   
+
    {
     category: "Machine Learning",
     title: "This is you on Chair Forces.",
@@ -178,7 +180,7 @@ const portfolio = {
    },
    {
     category: "Machine Learning", 
-    title: "Back at it again with the white wrist rests!!!",
+    title: "!!!",
     url:"https://arxiv.org/abs/2001.03623",
     notes: "So much efficiency you can't even see the programs loading.",
     thumbnail:require("../editable-stuff/uniform.png"), 
