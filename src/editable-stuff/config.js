@@ -36,6 +36,11 @@ const about = {
   secondImage: require("../assets/img/humming-turtle.jpg"),
 };
 
+const whitepaper = {
+  show: true,
+  link: require("../assets/white-paper.pdf"),
+};
+
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
 //      i.e: reposLength: 0,
@@ -52,7 +57,7 @@ const repos = {
 // Leadership SECTION
 const leadership = {
   show: false,
-  heading: "Publications",
+  heading: "no-Publications",
   message:
     "",
   images: [
@@ -189,4 +194,4 @@ const portfolio = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, portfolio };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, portfolio, whitepaper };

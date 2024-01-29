@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, about, repos, leadership, skills, experiences, portfolio, whitepaper, getInTouch } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -57,30 +57,62 @@ const Navigation = React.forwardRef((props, ref) => {
               About
             </NavLink>
           )}
+          {experiences.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#experiences"}
+            >
+              Experiences
+            </NavLink>
+          )}
+          {leadership.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#leadership"}
+            >
+              Leadership
+            </NavLink>
+          )}
+          {portfolio.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#portfolio"}
+            >
+              Portfolio
+            </NavLink>
+          )}
           {skills.show && (
             <NavLink
               className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#publication"}
+              href={process.env.PUBLIC_URL + "/#skills"}
             >
-              Publications
+              Skills
             </NavLink>
-          )}               
+          )}
           {repos.show && (
           <NavLink
-            href={process.env.PUBLIC_URL + "/#portfolio"}
+            href={process.env.PUBLIC_URL + "/#repos"}
           >
             Projects
           </NavLink>
           )}
-	  <NavLink
+          {getInTouch.show && (
+          <NavLink
+            href={process.env.PUBLIC_URL + "/#getInTouch"}
+          >
+            Contact
+          </NavLink>
+          )}
+          {whitepaper.show && (
+          <NavLink
             className="nav-item lead"
-            href={about.poster}
+            href={whitepaper.link}
             target="_blank"
             rel="noreferrer noopener"
           >
             White Paper
           </NavLink>
-
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
