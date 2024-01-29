@@ -155,7 +155,7 @@ const portfolio = {
    list: [
     {
     category: "Mobile App",
-    title: "If you steal our design I will find you, and I will kill you.",
+    title: "Obscenely ergonomic.",
     url: "https://arxiv.org/abs/2401.06300",
     notes: "Here we see the ergonomic designs in action.  You've got your 60% keyboard, wrist rests, and a flat surface for them.  You also have your trusty Mousepad 9,000 (you're over 9,000).",
     thumbnail:require("../editable-stuff/birds.png"), 
