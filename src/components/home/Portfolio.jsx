@@ -6,7 +6,6 @@ import PortfolioCard from "./PortfolioCard";
 
 const Portfolio = ({ heading, list,note, quote }) => {
     const mobileApps = list.filter((x) => x.category === 'Mobile App')
-    const alexaSkills = list.filter(x => x.category === 'Alexa Skills');
     const machineLearning = list.filter(x => x.category === 'Machine Learning');
     return (
         <Jumbotron fluid id="portfolio" className="bg-light m-0  target-section">
