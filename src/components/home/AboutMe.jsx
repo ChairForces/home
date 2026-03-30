@@ -3,7 +3,7 @@ import { Jumbotron } from "./migration";
 
 const AboutMe = ({ heading, link, imgSize, secondImage, resume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
-  const [showPic, setShowPic] = React.useState(Boolean(link));
+  const showPic = Boolean(link);
   // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
   React.useEffect(() => {
     setProfilePicUrl(link);
